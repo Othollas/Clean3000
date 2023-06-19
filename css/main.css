@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header div {
+  display: flex;
+}
+header div img {
+  padding: 0 2rem 2rem 2rem;
+  justify-content: center;
+  width: 40vh;
+  height: 10rem;
+  background-color: black;
+  margin: 2rem auto;
+}
+header div {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  text-decoration: underline;
+  margin: auto;
+}
+header div h1 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  text-decoration: underline;
+  margin: auto;
+  padding-top: 4rem;
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+
+main {
+  margin: 4rem 4rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+main div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem auto;
+  margin: 2rem auto;
+}
+main div label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+main div label select {
+  margin: 2rem;
+  padding: 0.5rem 0;
+}
+main div label input {
+  margin: 2rem;
+  padding: 0.5rem 0;
+}
+main div label textarea {
+  max-width: 820px;
+  width: fit-content;
+  margin: 4rem auto 0 auto;
+  padding: 2rem 5rem;
+}
+
+footer {
+  display: flex;
+}
+footer img {
+  padding: 0 2rem 2rem 2rem;
+  justify-content: center;
+  width: 40vh;
+  height: 10rem;
+  background-color: black;
+  margin: 2rem auto;
+}
+
+/*# sourceMappingURL=main.css.map */

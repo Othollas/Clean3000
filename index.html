@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean3000</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
     <header>
         <!-- logo du client -->
+        <div>
+            <img src="img/logo-clean3000-transparent.png" alt="">
+        </div>
+        <div>
+            <h1>Avis de passage</h1>
+        </div>
     </header>
 
-    <div> <!-- ici la div servira à avoir une classe afin de mettre une bordure-->
 
-        <h1>Avis de passage</h1>
+    <main class="border"> <!-- ici la main servira aussi à mettre une bordure-->
 
         <div id="">
             <!-- input + label pour lier le champ de saisi il faut que l'id soit le meme que le for du label -->
             <!-- ici il faudra mettre select + option pour crée une selection et mettre "selected" pour definir la premiere saisie dés le chargement si ce n'est pas notre premiere option   -->
-            <label for="entrepriseName">
+            <label for="entrepriseName">mais que vous etes beau monsieur le client
                 <select id="entrepriseName">
                     <option value="ta">Toxic Avenger</option>
                     <option value="mj">Mister Joker</option>
@@ -32,30 +38,36 @@
             </label>
 
             <!-- ici on met un imput date pour avoir directement la date du jour sans entrer manuelement la date à chaque fois -->
-            <label for="currentDate"><input type="date"></label>
+            <label for="currentDate">comme votre museeau me semble long monsieur le client<input type="date"></label>
 
             <!-- Textarea pour crée un champ de saisi, pour definir la taille il fait ajouter ...  -->
-            <label for="commentClient"><input type="textaera" id="commentClient"></label>
+            <label for="commentClient">si votre ramage se rapporte à votre plumage vous etes le phenix de l'hote ces
+                bois, vous pouvez nous laissez un commmentaire : <textarea name="" id=""></textarea></label>
 
-            <!-- Juste le text de remerciement. -->
+
 
         </div>
 
         <div id="remerciement">
-            <p>Merci de votre visite à bientotgit add</p>
+            <!-- Juste le text de remerciement. -->
+            <p>Merci de votre confiance</p>
         </div>
 
         <div>
             <!-- signature du technicien et signature de l'entreprise // en mobile l'un sous lautre // en tablette, desktop côte à côte -->
-            <label for="signatureTechnicien"><input type="textarea" id="signatureTechnicien"></label>
-            <label for="signatureClient"><input type="textarea" id="signatureClient"></label>
+            <label for="signatureTechnicien">la signature du magnifique technicien qui sont à chaleureusement servi et à
+                qui vous avez evidement proposer un café<input type="textarea" id="signatureTechnicien"></label>
+            <label for="signatureClient">la signature de l'adorable client que vous etes<input type="textarea"
+                    id="signatureClient"></label>
         </div>
 
-    </div>
+    </main>
 
-    <header>
+    <footer>
+        <!-- logo -->
+        <img src="img/logo-clean3000-transparent.png" alt="">
         <!-- Nous mettrons les information recapitulatives du client -->
-    </header>
+    </footer>
 </body>
 
 </html>
