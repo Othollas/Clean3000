@@ -4,37 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capybara style</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Clean3000</title>
 </head>
 
 <body>
 
     <header>
-        <div class="container">
-            <img src="photo/header.jpg" alt="">
-            <div  class="row">
-                <ul>
-                    <li>coucou</li>
-                    <li>tu veux voir</li>
-                    <li>mon capybara</li>
-                </ul>
-            </div>
-        </div>
+        <!-- logo du client -->
     </header>
 
-    <main>
-        <img src="photo/e02b9f30e52964a135f97e726770a8d8--tiny-monkey-guinea-pigs.jpg" alt="">
-        <img src="photo/6984c9512338577e9ed69e76236e7ca4.jpg" alt="">
-    </main>
+    <div> <!-- ici la div servira à avoir une classe afin de mettre une bordure-->
 
-    <footer>
-        <ul>
-            <li>twitter</li>
-            <li>facebook</li>
-        </ul>
-    </footer>
+        <h1>Avis de passage</h1>
 
+        <div id="">
+            <!-- input + label pour lier le champ de saisi il faut que l'id soit le meme que le for du label -->
+            <!-- ici il faudra mettre select + option pour crée une selection et mettre "selected" pour definir la premiere saisie dés le chargement si ce n'est pas notre premiere option   -->
+            <label for="entrepriseName">
+                <select id="entrepriseName">
+                    <option value="ta">Toxic Avenger</option>
+                    <option value="mj">Mister Joker</option>
+                    <option value="lc">Les Crados</option>
+                    <option value="jmp">J-m Pamelaver</option>
+                    <option value="d3">Degueu3000</option>
+                    <option value="jp">Jay Pludidé</option>
+                </select>
+            </label>
+
+            <!-- ici on met un imput date pour avoir directement la date du jour sans entrer manuelement la date à chaque fois -->
+            <label for="currentDate"><input type="date"></label>
+
+            <!-- Textarea pour crée un champ de saisi, pour definir la taille il fait ajouter ...  -->
+            <label for="commentClient"><input type="textaera" id="commentClient"></label>
+
+            <!-- Juste le text de remerciement. -->
+
+        </div>
+
+        <div id="remerciement">
+            <p>Merci de votre visite à bientotgit add</p>
+        </div>
+
+        <div>
+            <!-- signature du technicien et signature de l'entreprise // en mobile l'un sous lautre // en tablette, desktop côte à côte -->
+            <label for="signatureTechnicien"><input type="textarea" id="signatureTechnicien"></label>
+            <label for="signatureClient"><input type="textarea" id="signatureClient"></label>
+        </div>
+
+    </div>
+
+    <header>
+        <!-- Nous mettrons les information recapitulatives du client -->
+    </header>
 </body>
 
 </html>
