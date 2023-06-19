@@ -1,12 +1,12 @@
 // commençons par recuperer les données du client
-import Client from "./client"
+
 
 
 let selectEntreprise ;
 
 // donnée de l'entreprise
 
-let entreprise = document.querySelector("#entrepriseName").value; 
+let entreprise = document.querySelector("#entrepriseName"); 
 
 // donnée du jour
 
@@ -18,27 +18,26 @@ let comment = document.querySelectorAll("#commentClient");
 
 // recuperer le champ où le texte sera inscrit
 
-// let recap = document.querySelector("#recap")
+let recap = document.querySelector(".recap")
 
-let clients = new Array()
 
-if (localStorage.getItem("clients")) {
-    let clientsString = localStorage.getItem("clients");
-    let clientsArray = JSON.parse(clientsString);
-    clients = clientsArray.map(object => {
-        return new Client(object.entreprise, object.date, object.comment);
-    });
-}
+let button = document.querySelector(".recap")
 
-const entrepriseName = {
-    "ta": "Toxic Avenger",
-    "lc": "les crados",
-    "jpm": "j-m paslaver",
-    "d3": "Degueu3000",
-    "jp": "Jay pludidé"
-}
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+    
+    entreprise = document.querySelector("#entrepriseName").value ;
+    date = document.querySelector("#currentDate").value ;
+    comment = document.querySelector("#commentClient").value ;
+    return entreprise, date, comment;
+});
 
-let recap = document.querySelector(".booking-form");
-recap.addEventListener("submit", (e) => {
-    // Annuler le comportement par défaut (à savoir la soumission du formulaire)
-    e.preventDefault();});
+
+
+let recapitulatif = document.querySelector("#recapitulatif");
+
+function getRecap() {
+    recapitulatif.innerText = ` la societé ${entreprise} à été mandaté le ${date} `
+};
+
+button.onchange = getRecap;

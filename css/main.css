@@ -114,7 +114,6 @@ main div label textarea {
     width: 50rem;
     height: 20rem;
     margin: 5rem 2rem;
-    text-align: start;
   }
 }
 
@@ -154,6 +153,14 @@ div p {
   .sign label input {
     padding: 4rem 5rem;
   }
+}
+
+.btn {
+  padding: 2rem 3rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 4rem;
 }
 
 footer {

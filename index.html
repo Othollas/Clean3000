@@ -28,7 +28,7 @@
             <!-- ici il faudra mettre select + option pour crée une selection et mettre "selected" pour definir la premiere saisie dés le chargement si ce n'est pas notre premiere option   -->
 
 
-            <label for="entrepriseName">mais que vous etes beau monsieur le client
+            <label for="entrepriseName">Nom entreprise/ou client :
                 <select id="entrepriseName">
                     <option value="ta">Toxic Avenger</option>
                     <option value="lc">Les Crados</option>
@@ -41,12 +41,11 @@
 
             <!-- ici on met un imput date pour avoir directement la date du jour sans entrer manuelement la date à chaque fois -->
 
-            <label for="currentDate">comme votre museeau me semble long monsieur le client<input type="date" id="currentDate"></label>
+            <label for="currentDate">Notre technicien est intervenu pour l'entretien de la vitrerie le : <input type="date" id="currentDate"></label>
 
             <!-- Textarea pour crée un champ de saisi, pour definir la taille il fait ajouter ...  -->
 
-            <label for="commentClient">si votre ramage se rapporte à votre plumage vous etes le phenix de l'hote ces
-                bois, vous pouvez nous laissez un commmentaire : <textarea name="" id=""></textarea>
+            <label for="commentClient">Observation <textarea name="" id="commentClient"></textarea>
             </label>
 
 
@@ -55,22 +54,21 @@
 
         <div id="remerciement">
             <!-- Juste le text de remerciement. -->
-            <p>Merci de votre confiance</p>
+            <p>Merci de votre confiance.</p>
         </div>
 
         <div class="sign">
             <!-- signature du technicien et signature de l'entreprise // en mobile l'un sous lautre // en tablette, desktop côte à côte -->
-            <label for="techSign">la signature du magnifique technicien qui sont à chaleureusement servi et à
-                qui vous avez evidement proposer un café<input type="text" id="techSign">
+            <label for="techSign">Signature du technicien : <input type="text" id="techSign">
             </label>
 
-            <label for="signatureClient">la signature de l'adorable client que vous etes<input type="text"
+            <label for="signatureClient">Signature du client/cachet de l'entreprise :<input type="text"
                     id="clientSign">
             </label>
         </div>
 
 <div class="recap">
-    <button>Submit</button>
+    <button type="submit" class="btn">Enregistrer</button>
 </div>
 
     </main>
@@ -79,7 +77,7 @@
         <!-- logo -->
         <img src="img/logo-clean3000-transparent.png" alt="">
         <!-- Nous mettrons les information recapitulatives du client -->
-        <p id="recapitulatif"></p>
+        <p id="recapitulatif" class></p>
     </footer>
 </body>
 <script src="js/main.js"></script>
