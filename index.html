@@ -27,30 +27,28 @@
             <!-- input + label pour lier le champ de saisi il faut que l'id soit le meme que le for du label -->
             <!-- ici il faudra mettre select + option pour crée une selection et mettre "selected" pour definir la premiere saisie dés le chargement si ce n'est pas notre premiere option   -->
 
-            
-                <label for="entrepriseName">mais que vous etes beau monsieur le client
-                    <select id="entrepriseName">
-                        <option value="ta">Toxic Avenger</option>
-                        <option value="mj">Mister Joker</option>
-                        <option value="lc">Les Crados</option>
-                        <option value="jmp">J-m Pamelaver</option>
-                        <option value="d3">Degueu3000</option>
-                        <option value="jp">Jay Pludidé</option>
-                    </select>
-                </label>
-          
+
+            <label for="entrepriseName">mais que vous etes beau monsieur le client
+                <select id="entrepriseName">
+                    <option value="ta">Toxic Avenger</option>
+                    <option value="lc">Les Crados</option>
+                    <option value="jpm">J-m Pamelaver</option>
+                    <option value="d3">Degueu3000</option>
+                    <option value="jp">Jay Pludidé</option>
+                </select>
+            </label>
+
 
             <!-- ici on met un imput date pour avoir directement la date du jour sans entrer manuelement la date à chaque fois -->
-            
-                <label for="currentDate">comme votre museeau me semble long monsieur le client<input
-                        type="date"></label>
-            
+
+            <label for="currentDate">comme votre museeau me semble long monsieur le client<input type="date" id="currentDate"></label>
+
             <!-- Textarea pour crée un champ de saisi, pour definir la taille il fait ajouter ...  -->
-            
-                <label for="commentClient">si votre ramage se rapporte à votre plumage vous etes le phenix de l'hote ces
-                    bois, vous pouvez nous laissez un commmentaire : <textarea name="" id=""></textarea>
-                </label>
-           
+
+            <label for="commentClient">si votre ramage se rapporte à votre plumage vous etes le phenix de l'hote ces
+                bois, vous pouvez nous laissez un commmentaire : <textarea name="" id=""></textarea>
+            </label>
+
 
 
         </div>
@@ -62,11 +60,18 @@
 
         <div class="sign">
             <!-- signature du technicien et signature de l'entreprise // en mobile l'un sous lautre // en tablette, desktop côte à côte -->
-            <label for="signatureTechnicien">la signature du magnifique technicien qui sont à chaleureusement servi et à
-                qui vous avez evidement proposer un café<input type="text" id="signatureTechnicien"></label>
+            <label for="techSign">la signature du magnifique technicien qui sont à chaleureusement servi et à
+                qui vous avez evidement proposer un café<input type="text" id="techSign">
+            </label>
+
             <label for="signatureClient">la signature de l'adorable client que vous etes<input type="text"
-                    id="signatureClient"></label>
+                    id="clientSign">
+            </label>
         </div>
+
+<div class="recap">
+    <button>Submit</button>
+</div>
 
     </main>
 
@@ -74,7 +79,8 @@
         <!-- logo -->
         <img src="img/logo-clean3000-transparent.png" alt="">
         <!-- Nous mettrons les information recapitulatives du client -->
+        <p id="recapitulatif"></p>
     </footer>
 </body>
-
+<script src="js/main.js"></script>
 </html>
